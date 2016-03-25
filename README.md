@@ -16,7 +16,7 @@ Find the longest sequence of consecutive zeros that is surrounded by ones at bot
 Compute the number of integers divisible by `k` in range `[a, b]`.
 
 #### Distinct pythonic
-Calculate the number of distinct valueas in an array `A` using a pythonic one-liner.
+Calculate the number of distinct values in an array `A` using a pythonic one-liner.
 
 #### Distinct unpythonic
 Calculate the number of distinct values in an array `A`. Probably the expected solution (the exercise is meant to use sorting).
@@ -25,7 +25,10 @@ Calculate the number of distinct values in an array `A`. Probably the expected s
 A frog is located at position `X` and wants to get to a position greater than or equal to `Y`. The frog always jumps a fixed distance `D`. Return the minimal number of jumps that the small frog must perform to reach its target.
 
 #### Max counter
-
+Given N counters and a non empty array `A` of `M` integers representing a sequence of operations:
+* if `A[K]=X` such that `1 <= X <= N`, increment counter `X`
+* if `A[K]=N+1`, set all counters to the maximum value of any counter
+calculate the value of every counter after all operations.
 
 #### Max profit
 
@@ -42,5 +45,5 @@ Find the missing element in a given permutation.
 #### String symmetry point
 
 #### Tape equilibrium
-Find an integer `P` that splits a non-empty array `A` into two non-empty parts: A<sub>1</sup>=A[0], ..., A[P-1] and A<sub>1</sub>=A[P], ..., A[N-1] such that A<sub>1</sub>=A<sub>2</sub>.
+Find an integer `P` that splits a non-empty array `A` into two non-empty parts: A<sub>1</sub>=A[0], ..., A[P-1] and A<sub>2</sub>=A[P], ..., A[N-1] such that A<sub>1</sub>=A<sub>2</sub>.
 
