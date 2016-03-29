@@ -1,10 +1,13 @@
 # Python katas
-Short exercises in Python.
+Short exercises in Python. Mostly FizzBuzz level, some are more interesting (e.g. `Pi`, `Genomic range query`, `Passing cars`, `Max counter`).
 
 ## Miscellaneous
 
 #### Pi
 Calculate the first `n` digits of π using a spigot algorithm (Rabinowitz, Wagon, 1995). 
+
+#### Asterisk triangle
+Print some simple figures.
 
 ## Codility
 Training exercises from [Codility](https://www.codility.com). Probably correct, at least according to the autograder (all score 100%).
@@ -26,6 +29,9 @@ Calculate the number of distinct values in an array `A`. Probably the expected s
 
 #### Frog jump
 A mathematically inclined frog is located at position `X` and wants to get to a position greater than or equal to `Y`. The frog always jumps a fixed distance `D`. Return the minimal number of jumps that the frog must perform to reach its target.
+
+#### Genomic range query
+A DNA sequence is represented as a string consisting of the letters A, C, G, T, corresponding to the types of successive nucleotides in the sequence. Nucleotides A, C, G, and T have impact factors of 1, 2, 3, and4, respectively. Given a non-empty string `S` representing the DNA sequence and two non-empty arrays P and Q, each consisting of M integers, return an array of M integers representing the minimal factor between position `P[K]` and `Q[K]`.  
 
 #### Max counter
 Given N counters and a non empty array `A` of `M` integers representing a sequence of operations:
