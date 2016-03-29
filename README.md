@@ -3,6 +3,9 @@ Short exercises in Python.
 
 ## Miscellaneous
 
+#### Pi
+Calculate the first `n` digits of π using a spigot algorithm (Rabinowitz, Wagon, 1995). 
+
 ## Codility
 Training exercises from [Codility](https://www.codility.com). Probably correct, at least according to the autograder (all score 100%).
 
