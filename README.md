@@ -1,7 +1,8 @@
 # Python katas
-Short exercises in Python. Mostly FizzBuzz level, some are more interesting (e.g. `Pi`, `Genomic range query`, `Passing cars`, `Max counter`).
+Short exercises in Python. Mostly FizzBuzz level, although some are more interesting (e.g. `Pi`, `Genomic range query`, `Passing cars`, `Max counter`).
 
 ## Miscellaneous
+Problems from various sources, mostly from this [excellent repo](https://github.com/karan/Projects).
 
 #### Pi
 Calculate the first `n` digits of π using a spigot algorithm (Rabinowitz, Wagon, 1995). 
