@@ -10,6 +10,19 @@ Calculate the first `n` digits of π using a spigot algorithm (Rabinowitz, Wagon
 #### Asterisk triangle
 Print some simple figures.
 
+## Code Jam 2016
+Problems from Google Code Jam 2016.
+
+#### Counting sheep
+Bleatrix Trotter the sheep has devised a strategy that helps her fall asleep faster. First, she picks a number `N`. Then she starts naming `N`, `2N`, `3N`, and so on. Whenever she names a number, she thinks about all of the digits in that number. She keeps track of which digits she has seen at least once so far as part of any number she has named. Once she has seen each of the ten digits at least once, she will fall asleep. Knowing `N`, print the last number Bleatrix will see before falling asleep. If the poor sheep will count forever, print INSOMNIA instead.
+
+#### Revenge of the pancakes
+Given a string of '-' and '+' describing a stack of pancakes, print the minimal number of flips required so that all pancakes are happy side up ('+').
+
+The flip is defined as follows: if we number the pancakes `1, 2, ..., N` from top to bottom, choose the top `i` pancakes to flip. Then, after the flip, the stack is `i, i-1, ..., 2, 1, i+1, i+2, ..., N`. Pancakes `1, 2, ..., i` now have the opposite side up, whereas pancakes `i+1, i+2, ..., N` have the same side up that they had up before.
+
+
+
 ## Codility
 Training exercises from [Codility](https://www.codility.com). Probably correct, at least according to the autograder (all score 100%).
 
