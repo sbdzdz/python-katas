@@ -87,4 +87,4 @@ Find the missing element in a given permutation.
 Given a string `S`, return the index of a character such that the part of the string to the left of that character is a reversal of the part of the string to its right. Return `-1` if no such index exists.
 
 #### Tape equilibrium
-Find an integer `P` that splits a non-empty array `A` into two non-empty parts: `A<sub>1</sub>=A[0], ..., A[P-1]` and `A<sub>2</sub>=A[P], ..., A[N-1]` such that `A<sub>1</sub>=A<sub>2</sub>`.
+Find an integer `P` that splits a non-empty array `A` into two non-empty parts: `A1=A[0], ..., A[P-1]` and `A2=A[P], ..., A[N-1]` such that `A1=A2`.
