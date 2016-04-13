@@ -17,16 +17,16 @@ Problems from Google Code Jam 2016.
 Bleatrix Trotter the sheep has devised a strategy that helps her fall asleep faster. First, she picks a number `N`. Then she starts naming `N`, `2N`, `3N`, and so on. Whenever she names a number, she thinks about all of the digits in that number. She keeps track of which digits she has seen at least once so far as part of any number she has named. Once she has seen each of the ten digits at least once, she will fall asleep. Knowing `N`, print the last number Bleatrix will see before falling asleep. If the poor sheep will count forever, print INSOMNIA instead.
 
 #### Revenge of the pancakes
-Given a string of '-' and '+' describing a stack of pancakes, print the minimal number of flips required so that all pancakes are happy side up ('+').
+Given a string of `-` and `+` describing a stack of pancakes, print the minimal number of flips required so that all pancakes are happy side up (`+`).
 
 The flip is defined as follows: if we number the pancakes `1, 2, ..., N` from top to bottom, choose the top `i` pancakes to flip. Then, after the flip, the stack is `i, i-1, ..., 2, 1, i+1, i+2, ..., N`. Pancakes `1, 2, ..., i` now have the opposite side up, whereas pancakes `i+1, i+2, ..., N` have the same side up that they had up before.
 
 #### Coin jam
- A jamcoin is a string of N ≥ 2 digits with the following properties:
+A jamcoin is a string of N >= 2 digits with the following properties:
 
-    * Every digit is either 0 or 1.
-    * The first digit is 1 and the last digit is 1.
-    * If you interpret the string in any base between 2 and 10, inclusive, the resulting number is not prime.
+* Every digit is either 0 or 1.
+* The first digit is 1 and the last digit is 1.
+* If you interpret the string in any base between 2 and 10, inclusive, the resulting number is not prime.
 
 There are communities that use jamcoins as a form of currency. When sending someone a jamcoin, it is polite to prove that the jamcoin is legitimate by including a nontrivial divisor of that jamcoin's interpretation in each base from 2 to 10. For convenience, these divisors must be expressed in base 10.
 
@@ -87,4 +87,4 @@ Find the missing element in a given permutation.
 Given a string `S`, return the index of a character such that the part of the string to the left of that character is a reversal of the part of the string to its right. Return `-1` if no such index exists.
 
 #### Tape equilibrium
-Find an integer `P` that splits a non-empty array `A` into two non-empty parts: A<sub>1</sub>=A[0], ..., A[P-1] and A<sub>2</sub>=A[P], ..., A[N-1] such that A<sub>1</sub>=A<sub>2</sub>.
+Find an integer `P` that splits a non-empty array `A` into two non-empty parts: `A<sub>1</sub>=A[0], ..., A[P-1]` and `A<sub>2</sub>=A[P], ..., A[N-1]` such that `A<sub>1</sub>=A<sub>2</sub>`.
