@@ -32,6 +32,8 @@ There are communities that use jamcoins as a form of currency. When sending some
 
 Given `J` and `N`, produce `J` different jamcoins of length `N`, along with proof that they are legitimate.
 
+#### Minimum scalar product
+You are given two vectors: X and Y. Suppose you are allowed to permute the coordinates of each vector as you wish. Choose two permutations such that the scalar product of your two new vectors is the smallest possible, and output that minimum scalar product. 
 
 ## Codility
 Training exercises from [Codility](https://www.codility.com). Probably correct, at least according to the autograder (all score 100%).
