@@ -1,5 +1,5 @@
 # Python katas
-Short exercises in Python. Mostly FizzBuzz level, although some are more interesting (e.g. `Pi`, `Genomic range query`, `Passing cars`, `Max counter`).
+Short exercises in Python. Mostly FizzBuzz level, although some are more interesting (e.g. `Coin Jam`, `Genomic range query`, `Passing cars`, `Max counter`).
 
 ## Code Jams
 Problems from Google Code Jams.
