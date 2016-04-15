@@ -33,7 +33,7 @@ There are communities that use jamcoins as a form of currency. When sending some
 Given `J` and `N`, produce `J` different jamcoins of length `N`, along with proof that they are legitimate.
 
 #### File fix-it
-Given a list of paths of existing directories on a Unix system and a list of paths of directories to create, output the minimal number of `mkdir` commands required to create the new directories. For example, given:
+Given a list of paths of existing directories on a Unix system and a list of paths of new directories, output the minimal number of `mkdir` commands required to create the new directories. For example, given:
 ```
 	Existing:
 		/chicken
