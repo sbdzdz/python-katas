@@ -34,6 +34,7 @@ Given `J` and `N`, produce `J` different jamcoins of length `N`, along with proo
 
 #### File fix-it
 Given a list of paths of existing directories on a Unix system and a list of paths of directories to create, output the minimal number of `mkdir` commands required to create the new directories. For example, given:
+```
 	Existing:
 		/chicken
 		/chicken/egg
@@ -42,11 +43,13 @@ Given a list of paths of existing directories on a Unix system and a list of pat
 		/chicken
 		/chicken/egg/ham/spam
 		/chicken/spam
+```
 the answer should be 3, because the required commands are:
+```
 	mkdir chicken/egg/ham
 	mkdir chicken/egg/ham/spam
 	mkdir chicken/spam
-
+```
 #### Minimum scalar product
 You are given two vectors: X and Y. Suppose you are allowed to permute the coordinates of each vector as you wish. Choose two permutations such that the scalar product of your two new vectors is the smallest possible, and output that minimum scalar product. 
 
