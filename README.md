@@ -1,15 +1,6 @@
 # Python katas
 Short exercises in Python. Mostly FizzBuzz level, although some are more interesting (e.g. `Pi`, `Genomic range query`, `Passing cars`, `Max counter`).
 
-## Miscellaneous
-Problems from various sources, mostly from this [excellent repo](https://github.com/karan/Projects).
-
-#### Pi
-Calculate the first `n` digits of π using a spigot algorithm (Rabinowitz, Wagon, 1995). 
-
-#### Asterisk triangle
-Print some simple figures.
-
 ## Code Jams
 Problems from Google Code Jams.
 
@@ -108,3 +99,12 @@ Given a string `S`, return the index of a character such that the part of the st
 
 #### Tape equilibrium
 Find an integer `P` that splits a non-empty array `A` into two non-empty parts: `A1=A[0], ..., A[P-1]` and `A2=A[P], ..., A[N-1]` such that `A1=A2`.
+
+## Miscellaneous
+Problems from various sources, mostly from this [excellent repo](https://github.com/karan/Projects).
+
+#### Pi
+Calculate the first `n` digits of π using a spigot algorithm (Rabinowitz, Wagon, 1995). 
+
+#### Asterisk triangle
+Print some simple figures.
