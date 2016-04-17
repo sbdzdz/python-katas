@@ -35,6 +35,9 @@ the answer should be 3, because the required commands are:
 	mkdir chicken/spam
 ```
 
+#### Last word
+On the game show The Last Word, the host begins a round by showing the contestant a string S of uppercase English letters. The host will then present the contestant with the letters of S, one by one, in the order in which they appear in S. When the host presents the first letter, the contestant writes it on the whiteboard. Each time the host presents a letter, the contestant must write it at the beginning or the end of the word on the whiteboard before the host moves on to the next letter. The contestant wins the game if their last word is the last of an alphabetically sorted list of all of the possible last words that could have been produced.
+
 #### Minimum scalar product
 You are given two vectors: X and Y. Suppose you are allowed to permute the coordinates of each vector as you wish. Choose two permutations such that the scalar product of your two new vectors is the smallest possible, and output that minimum scalar product. 
 
