@@ -82,6 +82,7 @@ Two fish P and Q meet each other when P < Q, B[P] = 1 and B[Q] = 0, and there ar
         * If A[Q] > A[P] then Q eats P, and Q will still be flowing upstream.
 
 We assume that fish moving in the same direction never meet. The goal is to calculate the number of fish that will stay alive.
+
 #### Frog jump
 A mathematically inclined frog is located at position `X` and wants to get to a position greater than or equal to `Y`. The frog always jumps a fixed distance `D`. Return the minimal number of jumps that the frog must perform to reach its target.
 
@@ -101,6 +102,14 @@ An array `A` contains daily prices of a stock share for a period of `N` consecut
 #### Min perimeter rectangle
 Find the minimal perimeter of a rectangle whose area equals `N`. Assume that the lengths of sides are integers.
 
+#### Nesting
+A string S consisting of N characters is called properly nested if:
+
+        * S is empty;
+        * S has the form "(U)" where U is a properly nested string;
+        * S has the form "VW" where V and W are properly nested strings.
+
+Write a function that, given a string S consisting of N characters, returns 1 if string S is properly nested and 0 otherwise.
 #### Odd occurences in array
 Find the only element of a non-empty array `A` of `N` integers that occurs odd number of times.
 
