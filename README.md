@@ -69,6 +69,11 @@ Write a function that returns 1 if S is properly nested and 0 otherwise.
 #### Count div
 Compute the number of integers divisible by `k` in range `[a, b]`.
 
+#### Disc intersections
+We draw `N` discs on a plane. The discs are numbered from 0 to `N-1`. A zero-indexed array `A` of `N` non-negative integers, specifying the radiuses of the discs, is given. The `J`-th disc is drawn with its center at `(J, 0)` and radius `A[J]`.
+
+Two disc intersect if they have at least one common point (assuming that the discs contain their borders). Write a function that, given an array `A` describing `N` discs as explained above, returns the number of (unordered) pairs of intersecting discs. The function should return −1 if the number of intersecting pairs exceeds 10,000,000.
+
 #### Distinct pythonic
 Calculate the number of distinct values in an array `A` using a pythonic one-liner.
 
