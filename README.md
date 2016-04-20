@@ -57,6 +57,15 @@ Given a non-empty array `A` consisting of `N` integers, return the array shifted
 #### Binary gap
 Find the longest sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of an integer `N`.
 
+#### Brackets
+A string S is considered to be properly nested if any of the following conditions is true:
+
+        * S is empty;
+        * S has the form "(U)" or "[U]" or "{U}" where U is a properly nested string;
+        * S has the form "VW" where V and W are properly nested strings.
+
+Write a function that returns 1 if S is properly nested and 0 otherwise.
+
 #### Count div
 Compute the number of integers divisible by `k` in range `[a, b]`.
 
@@ -110,6 +119,7 @@ A string S consisting of N characters is called properly nested if:
         * S has the form "VW" where V and W are properly nested strings.
 
 Write a function that, given a string S consisting of N characters, returns 1 if string S is properly nested and 0 otherwise.
+
 #### Odd occurences in array
 Find the only element of a non-empty array `A` of `N` integers that occurs odd number of times.
 
