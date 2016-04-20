@@ -13,8 +13,10 @@ A jamcoin is a string of N >= 2 digits with the following properties:
 
 There are communities that use jamcoins as a form of currency. When sending someone a jamcoin, it is polite to prove that the jamcoin is legitimate by including a nontrivial divisor of that jamcoin's interpretation in each base from 2 to 10. For convenience, these divisors must be expressed in base 10.
 
+Given *J* and *N*, produce *J* different jamcoins of length *N*, along with proof that they are legitimate.
+
 #### Counting sheep
-Bleatrix Trotter the sheep has devised a strategy that helps her fall asleep faster. First, she picks a number `N`. Then she starts naming `N`, `2N`, `3N`, and so on. Whenever she names a number, she thinks about all of the digits in that number. She keeps track of which digits she has seen at least once so far as part of any number she has named. Once she has seen each of the ten digits at least once, she will fall asleep. Knowing `N`, print the last number Bleatrix will see before falling asleep. If the poor sheep will count forever, print INSOMNIA instead.
+Bleatrix "Trotter" the sheep has devised a strategy that helps her fall asleep faster. First, she picks a number *N*. Then she starts naming *N*, *2N*, *3N*, and so on. Whenever she names a number, she thinks about all of the digits in that number. She keeps track of which digits she has seen at least once so far as part of any number she has named. Once she has seen each of the ten digits at least once, she will fall asleep. Knowing 'N', print the last number Bleatrix will see before falling asleep. If the poor sheep will count forever, print INSOMNIA instead.
 
 #### File fix-it
 Given a list of paths of existing directories on a Unix system and a list of paths of new directories, output the minimal number of `mkdir` commands required to create the new directories. For example, given:
@@ -46,8 +48,6 @@ Given a string of `-` and `+` describing a stack of pancakes, print the minimal 
 
 The flip is defined as follows: if we number the pancakes `1, 2, ..., N` from top to bottom, choose the top `i` pancakes to flip. Then, after the flip, the stack is `i, i-1, ..., 2, 1, i+1, i+2, ..., N`. Pancakes `1, 2, ..., i` now have the opposite side up, whereas pancakes `i+1, i+2, ..., N` have the same side up that they had up before.
 
-Given `J` and `N`, produce `J` different jamcoins of length `N`, along with proof that they are legitimate.
-
 ## Codility
 Training exercises from [Codility](https://www.codility.com). Probably correct, at least according to the autograder (all score 100%).
 
@@ -60,9 +60,9 @@ Find the longest sequence of consecutive zeros that is surrounded by ones at bot
 #### Brackets
 A string S is considered to be properly nested if any of the following conditions is true:
 
-        * S is empty;
-        * S has the form "(U)" or "[U]" or "{U}" where U is a properly nested string;
-        * S has the form "VW" where V and W are properly nested strings.
+* S is empty;
+* S has the form "(U)" or "[U]" or "{U}" where U is a properly nested string;
+* S has the form "VW" where V and W are properly nested strings.
 
 Write a function that returns 1 if S is properly nested and 0 otherwise.
 
@@ -70,30 +70,30 @@ Write a function that returns 1 if S is properly nested and 0 otherwise.
 Compute the number of integers divisible by `k` in range `[a, b]`.
 
 #### Disc intersections
-We draw `N` discs on a plane. The discs are numbered from 0 to `N-1`. A zero-indexed array `A` of `N` non-negative integers, specifying the radiuses of the discs, is given. The `J`-th disc is drawn with its center at `(J, 0)` and radius `A[J]`.
+We draw *N* discs on a plane. The discs are numbered from 0 to *N-1*. A zero-indexed array *A* of *N* non-negative integers, specifying the radiuses of the discs, is given. The *J*-th disc is drawn with its center at *(J, 0)* and radius *A[J]*.
 
 Two disc intersect if they have at least one common point (assuming that the discs contain their borders). Write a function that, given an array `A` describing `N` discs as explained above, returns the number of (unordered) pairs of intersecting discs. The function should return −1 if the number of intersecting pairs exceeds 10,000,000.
 
 #### Distinct pythonic
-Calculate the number of distinct values in an array `A` using a pythonic one-liner.
+Calculate the number of distinct values in an array *A* using a pythonic one-liner.
 
 #### Distinct unpythonic
-Calculate the number of distinct values in an array `A`. Probably the expected solution (the exercise is meant to use sorting).
+Calculate the number of distinct values in an array *A*. Probably the expected solution (the exercise is meant to use sorting).
 
 #### Fish
 You are given two non-empty zero-indexed arrays A and B consisting of N integers. Arrays A and B represent N voracious fish in a river, ordered downstream along the flow of the river.
 
-The fish are numbered from 0 to N − 1. If P and Q are two fish and P < Q, then fish P is initially upstream of fish Q.
+The fish are numbered from 0 to N-1. If *P* and *Q* are two fish and P < Q, then fish P is initially upstream of fish Q.
 
 Array A contains the sizes of the fish. Array B contains the directions of the fish, where:
 
-        * 0 represents a fish flowing upstream,
-        * 1 represents a fish flowing downstream.
+* 0 represents a fish flowing upstream,
+* 1 represents a fish flowing downstream.
 
 Two fish P and Q meet each other when P < Q, B[P] = 1 and B[Q] = 0, and there are no living fish between them. After they meet:
 
-        * If A[P] > A[Q] then P eats Q, and P will still be flowing downstream,
-        * If A[Q] > A[P] then Q eats P, and Q will still be flowing upstream.
+* If A[P] > A[Q] then P eats Q, and P will still be flowing downstream,
+* If A[Q] > A[P] then Q eats P, and Q will still be flowing upstream.
 
 We assume that fish moving in the same direction never meet. The goal is to calculate the number of fish that will stay alive.
 
@@ -119,9 +119,9 @@ Find the minimal perimeter of a rectangle whose area equals `N`. Assume that the
 #### Nesting
 A string S consisting of N characters is called properly nested if:
 
-        * S is empty;
-        * S has the form "(U)" where U is a properly nested string;
-        * S has the form "VW" where V and W are properly nested strings.
+* S is empty;
+* S has the form "(U)" where U is a properly nested string;
+* S has the form "VW" where V and W are properly nested strings.
 
 Write a function that, given a string S consisting of N characters, returns 1 if string S is properly nested and 0 otherwise.
 
