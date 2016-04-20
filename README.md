@@ -13,10 +13,10 @@ A jamcoin is a string of N >= 2 digits with the following properties:
 
 There are communities that use jamcoins as a form of currency. When sending someone a jamcoin, it is polite to prove that the jamcoin is legitimate by including a nontrivial divisor of that jamcoin's interpretation in each base from 2 to 10. For convenience, these divisors must be expressed in base 10.
 
-Given *J* and *N*, produce *J* different jamcoins of length *N*, along with proof that they are legitimate.
+Given `J` and `N`, produce `J` different jamcoins of length `N`, along with proof that they are legitimate.
 
 #### Counting sheep
-Bleatrix "Trotter" the sheep has devised a strategy that helps her fall asleep faster. First, she picks a number *N*. Then she starts naming *N*, *2N*, *3N*, and so on. Whenever she names a number, she thinks about all of the digits in that number. She keeps track of which digits she has seen at least once so far as part of any number she has named. Once she has seen each of the ten digits at least once, she will fall asleep. Knowing 'N', print the last number Bleatrix will see before falling asleep. If the poor sheep will count forever, print INSOMNIA instead.
+Bleatrix "Trotter" the sheep has devised a strategy that helps her fall asleep faster. First, she picks a number `N`. Then she starts naming `N`, `2N`, `3N`, and so on. Whenever she names a number, she thinks about all of the digits in that number. She keeps track of which digits she has seen at least once so far as part of any number she has named. Once she has seen each of the ten digits at least once, she will fall asleep. Knowing `N`, print the last number Bleatrix will see before falling asleep. If the poor sheep will count forever, print INSOMNIA instead.
 
 #### File fix-it
 Given a list of paths of existing directories on a Unix system and a list of paths of new directories, output the minimal number of `mkdir` commands required to create the new directories. For example, given:
@@ -38,10 +38,10 @@ the answer should be 3, because the required commands are:
 ```
 
 #### Last word
-On the game show The Last Word, the host begins a round by showing the contestant a string S of uppercase English letters. The host will then present the contestant with the letters of S, one by one, in the order in which they appear in S. When the host presents the first letter, the contestant writes it on the whiteboard. Each time the host presents a letter, the contestant must write it at the beginning or the end of the word on the whiteboard before the host moves on to the next letter. The contestant wins the game if their last word is the last of an alphabetically sorted list of all of the possible last words that could have been produced.
+On the game show The Last Word, the host begins a round by showing the contestant a string `S` of uppercase English letters. The host will then present the contestant with the letters of S, one by one, in the order in which they appear in `S`. When the host presents the first letter, the contestant writes it on the whiteboard. Each time the host presents a letter, the contestant must write it at the beginning or the end of the word on the whiteboard before the host moves on to the next letter. The contestant wins the game if their last word is the last of an alphabetically sorted list of all of the possible last words that could have been produced.
 
 #### Minimum scalar product
-You are given two vectors: X and Y. Suppose you are allowed to permute the coordinates of each vector as you wish. Choose two permutations such that the scalar product of your two new vectors is the smallest possible, and output that minimum scalar product. 
+You are given two vectors: `X` and `Y`. Suppose you are allowed to permute the coordinates of each vector as you wish. Choose two permutations such that the scalar product of your two new vectors is the smallest possible, and output that minimum scalar product. 
 
 #### Revenge of the pancakes
 Given a string of `-` and `+` describing a stack of pancakes, print the minimal number of flips required so that all pancakes are happy side up (`+`).
@@ -58,42 +58,42 @@ Given a non-empty array `A` consisting of `N` integers, return the array shifted
 Find the longest sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of an integer `N`.
 
 #### Brackets
-A string S is considered to be properly nested if any of the following conditions is true:
+A string `S` is considered to be properly nested if any of the following conditions is true:
 
 * S is empty;
-* S has the form "(U)" or "[U]" or "{U}" where U is a properly nested string;
-* S has the form "VW" where V and W are properly nested strings.
+* S has the form "(U)" or "[U]" or "{U}" where `U` is a properly nested string;
+* S has the form "VW" where `V` and `W` are properly nested strings.
 
-Write a function that returns 1 if S is properly nested and 0 otherwise.
+Write a function that returns 1 if `S` is properly nested and 0 otherwise.
 
 #### Count div
 Compute the number of integers divisible by `k` in range `[a, b]`.
 
 #### Disc intersections
-We draw *N* discs on a plane. The discs are numbered from 0 to *N-1*. A zero-indexed array *A* of *N* non-negative integers, specifying the radiuses of the discs, is given. The *J*-th disc is drawn with its center at *(J, 0)* and radius *A[J]*.
+We draw `N` discs on a plane. The discs are numbered from 0 to `N-1`. A zero-indexed array `A` of `N` non-negative integers, specifying the radiuses of the discs, is given. The `J`-th disc is drawn with its center at `(J, 0)` and radius `A[J]`.
 
 Two disc intersect if they have at least one common point (assuming that the discs contain their borders). Write a function that, given an array `A` describing `N` discs as explained above, returns the number of (unordered) pairs of intersecting discs. The function should return −1 if the number of intersecting pairs exceeds 10,000,000.
 
 #### Distinct pythonic
-Calculate the number of distinct values in an array *A* using a pythonic one-liner.
+Calculate the number of distinct values in an array `A` using a pythonic one-liner.
 
 #### Distinct unpythonic
-Calculate the number of distinct values in an array *A*. Probably the expected solution (the exercise is meant to use sorting).
+Calculate the number of distinct values in an array `A`. Probably the expected solution (the exercise is meant to use sorting).
 
 #### Fish
 You are given two non-empty zero-indexed arrays A and B consisting of N integers. Arrays A and B represent N voracious fish in a river, ordered downstream along the flow of the river.
 
-The fish are numbered from 0 to N-1. If *P* and *Q* are two fish and P < Q, then fish P is initially upstream of fish Q.
+The fish are numbered from 0 to N-1. If `P` and `Q` are two fish and `P` < `Q`, then fish `P` is initially upstream of fish `Q`.
 
-Array A contains the sizes of the fish. Array B contains the directions of the fish, where:
+Array `A` contains the sizes of the fish. Array `B` contains the directions of the fish, where:
 
 * 0 represents a fish flowing upstream,
 * 1 represents a fish flowing downstream.
 
-Two fish P and Q meet each other when P < Q, B[P] = 1 and B[Q] = 0, and there are no living fish between them. After they meet:
+Two fish `P` and `Q` meet each other when `P` < `Q`, `B[P] = 1` and `B[Q] = 0`, and there are no living fish between them. After they meet:
 
-* If A[P] > A[Q] then P eats Q, and P will still be flowing downstream,
-* If A[Q] > A[P] then Q eats P, and Q will still be flowing upstream.
+* If `A[P] > A[Q]` then `P` eats `Q`, and `P` will still be flowing downstream,
+* If `A[Q] > A[P]` then `Q` eats `P`, and `Q` will still be flowing upstream.
 
 We assume that fish moving in the same direction never meet. The goal is to calculate the number of fish that will stay alive.
 
@@ -117,13 +117,13 @@ An array `A` contains daily prices of a stock share for a period of `N` consecut
 Find the minimal perimeter of a rectangle whose area equals `N`. Assume that the lengths of sides are integers.
 
 #### Nesting
-A string S consisting of N characters is called properly nested if:
+A string `S` consisting of `N` characters is called properly nested if:
 
-* S is empty;
-* S has the form "(U)" where U is a properly nested string;
-* S has the form "VW" where V and W are properly nested strings.
+* `S` is empty;
+* `S` has the form "(U)" where `U` is a properly nested string;
+* `S` has the form "VW" where `V` and `W` are properly nested strings.
 
-Write a function that, given a string S consisting of N characters, returns 1 if string S is properly nested and 0 otherwise.
+Write a function that, given a string `S` consisting of N characters, returns 1 if string `S` is properly nested and 0 otherwise.
 
 #### Odd occurences in array
 Find the only element of a non-empty array `A` of `N` integers that occurs odd number of times.
