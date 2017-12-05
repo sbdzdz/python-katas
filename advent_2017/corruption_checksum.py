@@ -14,6 +14,7 @@ def divisor(line):
                 return multiple // divisor
 
 input = inputs.checksum.split('\n')
-checksum1 = sum(min_max(parse(line)) for line in input)
-checksum2 = sum(divisor(parse(line)) for line in input)
-print(checksum1, checksum2)
+part_one = sum(min_max(parse(line)) for line in input)
+part_two = sum(divisor(parse(line)) for line in input)
+
+print(part_one, part_two)

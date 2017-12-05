@@ -54,3 +54,5 @@ def part_two():
 
 solution_one = list(islice(part_one(), inputs.spiral))[-1]
 solution_two = next(islice(dropwhile(lambda x: x < inputs.spiral, part_two()), 1))
+
+print(solution_one, solution_two)
