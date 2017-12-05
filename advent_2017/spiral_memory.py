@@ -1,5 +1,5 @@
 import inputs
-from itertools import count, islice, cycle, takewhile, dropwhile
+from itertools import islice, cycle, dropwhile
 
 def build_spiral():
     left = left_right()
