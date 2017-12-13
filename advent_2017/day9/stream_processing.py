@@ -1,5 +1,3 @@
-import inputs
-
 class StreamProcessor():
     def __init__(self):
         self.garbage = False
@@ -29,9 +27,12 @@ class StreamProcessor():
             self.garbage = True
 
 
+with open('input') as f:
+    stream = f.read()
+
 p = StreamProcessor()
 ignore = False
-for c in inputs.stream:
+for c in stream:
     if ignore:
         ignore = False
         continue

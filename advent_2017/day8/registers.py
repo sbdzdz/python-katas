@@ -1,6 +1,5 @@
 from collections import defaultdict
 from operator import lt, gt, le, ge, eq, ne 
-import inputs
 
 def compare(registers, lhs, condition, rhs):
     ops = {'<': lt,
@@ -18,9 +17,12 @@ def execute(registers, lhs, action, rhs):
         registers[lhs] -= int(rhs)
     return registers
 
+with open('input') as f:
+    inp = [line.strip() for line in f]
+
 registers = defaultdict(int)
 alltime_max = 0
-for line in inputs.registers.split('\n'):
+for line in inp:
     lhs1, action, rhs1, _, lhs2, condition, rhs2 = line.split()
     if compare(registers, lhs2, condition, rhs2):
         registers = execute(registers, lhs1, action, rhs1)

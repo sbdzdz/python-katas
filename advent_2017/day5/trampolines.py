@@ -1,5 +1,3 @@
-import inputs
-
 def update_one(jump):
     return jump + 1
 
@@ -20,6 +18,7 @@ def solve(jumptable, update):
         counter += 1
     return counter
 
-jumptable = [int(i) for i in inputs.trampolines.split()]
+with open('input') as f:
+    jumptable = [int(line.strip()) for line in f]
 
 print(solve(jumptable, update_one), solve(jumptable, update_two))

@@ -1,5 +1,3 @@
-import inputs
-
 def dist_from_max(index, max_index, length):
     if index > max_index:
         return index - max_index
@@ -22,8 +20,9 @@ def solve(memory):
         update(memory)
     return len(states), len(states)-states[tuple(memory)]
 
+with open('input') as f:
+    memory_banks = [int(e) for e in f.read().split()]
 
-memory_banks = [int(e) for e in inputs.memory.split()]
 part_one, part_two = solve(memory_banks)
 
 print(part_one, part_two)

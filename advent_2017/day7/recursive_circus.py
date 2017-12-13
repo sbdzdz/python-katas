@@ -1,5 +1,4 @@
 from collections import Counter
-import inputs
 import re
 
 class Node:
@@ -65,8 +64,9 @@ def balance(tree):
     return balance(tree)
 
 tree = Tree()
-for line in inputs.circus.split('\n'):
-    tree = update(tree, *parse(line))
+with open('input') as f:
+    for line in f:
+        tree = update(tree, *parse(line))
 
 print(find_root(tree))
 print(balance(tree))
