@@ -1,4 +1,3 @@
-import inputs
 from itertools import islice, cycle, dropwhile
 
 def build_spiral():
@@ -52,7 +51,8 @@ def part_two():
         spiral.append(new_value)
         yield new_value[2]
 
-solution_one = list(islice(part_one(), inputs.spiral))[-1]
-solution_two = next(islice(dropwhile(lambda x: x < inputs.spiral, part_two()), 1))
+inp = 368078
+solution_one = list(islice(part_one(), inp))[-1]
+solution_two = next(islice(dropwhile(lambda x: x < inp, part_two()), 1))
 
 print(solution_one, solution_two)
