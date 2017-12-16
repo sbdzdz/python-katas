@@ -1,6 +1,9 @@
 # Python katas
 Short exercises in Python. Mostly FizzBuzz level, although some are more interesting (e.g. [Coin Jam](https://github.com/sebastiandziadzio/python-katas#coin-jam), [Genomic range query](https://github.com/sebastiandziadzio/python-katas#genomic-range-query), [Passing cars](https://github.com/sebastiandziadzio/python-katas#passing-cars), [Max counter](https://github.com/sebastiandziadzio/python-katas#max-counter).
 
+## AoC 2017
+Problems from [Advent of Code 2017](https://adventofcode.com/2017).
+
 ## Code Jams
 Problems from Google Code Jams.
 
