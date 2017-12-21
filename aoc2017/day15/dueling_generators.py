@@ -1,28 +1,26 @@
-class Generator():
-    def __init__(self, start, factor):
-        self.previous = start
-        self.factor = factor
-        self.divisor = 2147483647
-
-    def __iter__(self):
-        return(self)
-
-    def __next__(self):
-        current = (self.previous*self.factor)%self.divisor
-        self.previous = current
-        return current
-
 def match(a, b):
     xor = format(a^b, '32b')[-16:]
     return not int(xor)
 
-def generator_a():
+def gen(start, factor):
     while True:
-        current = previous*factor%divisor
+        start = (start * factor) % 2147483647
+        yield start
 
-num_iter = 40000000
+def solve_first():
+    a = gen(618, 16807)
+    b = gen(814, 48271)
 
-a = Generator(65, 16807)
-b = Generator(8921, 48271)
+    num_iter = 40000000
+    return sum(match(next(a), next(b)) for _ in range(num_iter))
 
-print(sum(match(next(a), next(b)) for _ in range(num_iter)))
+def solve_second():
+    num_iter = 5000000
+    gen_a = (a for a in gen(618, 16807) if a % 4 == 0)
+    gen_b = (b for b in gen(618, 16807) if b % 8 == 0)
+    return sum(match(next(gen_a), next(gen_b)) for _ in range(num_iter))
+
+
+if __name__ == '__main__':
+    print(solve_first())
+    print(solve_second())
