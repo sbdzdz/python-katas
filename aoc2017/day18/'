@@ -1,0 +1,23 @@
+from collections import defaultdict
+with open('input') as f:
+    call = {'set': lambda reg,x,y: reg.__setitem__(x, int(y)),
+            'add': lambda reg,x,y: reg.__setitem__(x, reg.get(x, 0)+int(y)),
+            'mul': lambda reg,x,y: reg.__setitem__(x, reg.get(x, 0)*int(y)),
+            'mod': lambda reg,x,y: reg.__setitem__(x, reg.get(x, 0)%int(y))}
+
+    reg = dict()
+    with open('input') as f:
+        instructions = f.readlines()
+
+    index = 0
+    while index >= 0 and index < len(instructions):
+        index += 1
+        current = instructions[index]
+        if current.startswith('snd'):
+            last_played = int(current.split[1])
+        elif current.startswith('jgz'):
+            index += int(current.split[1])
+        else:
+            function, *args = current.split()
+        call[function](reg, *args)
+        print(instructions)
