@@ -1,5 +1,5 @@
 # Python katas
-Short exercises in Python. Mostly FizzBuzz level, although some are more interesting (e.g. [Coin Jam](https://github.com/sebastiandziadzio/python-katas#coin-jam), [Genomic range query](https://github.com/sebastiandziadzio/python-katas#genomic-range-query), [Passing cars](https://github.com/sebastiandziadzio/python-katas#passing-cars), [Max counter](https://github.com/sebastiandziadzio/python-katas#max-counter).
+Short exercises in Python from Advent of Code, Code Jams, Codility, Cracking the Coding Interview, and this [excellent repo](https://github.com/karan/Projects).
 
 ## AoC 2017
 Problems from [Advent of Code 2017](https://adventofcode.com/2017).
@@ -148,7 +148,7 @@ Given a string `S`, return the index of a character such that the part of the st
 Find an integer `P` that splits a non-empty array `A` into two non-empty parts: `A1=A[0], ..., A[P-1]` and `A2=A[P], ..., A[N-1]` such that `A1=A2`.
 
 ## Miscellaneous
-Problems from various sources, mostly from this [excellent repo](https://github.com/karan/Projects).
+Problems from various sources, mostly from this [repo](https://github.com/karan/Projects).
 
 #### Asterisk triangle
 Print some simple figures.
