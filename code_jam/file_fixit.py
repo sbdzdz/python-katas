@@ -1,3 +1,24 @@
+"""
+Given a list of paths of existing directories on a Unix system and a list of paths of new directories, output the minimal number of mkdir commands required to create the new directories.
+
+For example, given:
+
+    Existing:
+            /chicken
+            /chicken/egg
+            /chicken/egg/spam
+    New:
+            /chicken
+            /chicken/egg/ham/spam
+            /chicken/spam
+
+the answer should be 3, because the required commands are:
+
+	mkdir chicken/egg/ham
+	mkdir chicken/egg/ham/spam
+	mkdir chicken/spam
+"""
+
 import os
 
 def split_path(path):

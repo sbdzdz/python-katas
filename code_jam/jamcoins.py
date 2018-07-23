@@ -1,3 +1,15 @@
+"""
+A jamcoin is a string of N >= 2 digits with the following properties:
+
+- Every digit is either a 0 or 1.
+- The first digit is 1 and the last digit is 1.
+- If you interpret the string in any base between 2 and 10, inclusive, the resulting number is not prime.
+
+There are communities that use jamcoins as a form of currency. When sending someone a jamcoin, it is polite to prove that the jamcoin is legitimate by including a nontrivial divisor of that jamcoin's interpretation in each base from 2 to 10. For convenience, these divisors must be expressed in base 10.
+
+Given J and N, produce J different jamcoins of length N, along with proof that they are legitimate.
+"""
+
 import itertools
 import collections
 

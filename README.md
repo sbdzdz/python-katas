@@ -1,55 +1,11 @@
 # Python katas
-Short exercises in Python from Advent of Code, Code Jams, Codility, Cracking the Coding Interview, and this [excellent repo](https://github.com/karan/Projects).
+Short exercises in Python from Advent of Code, Code Jams, Codility, Hackerrank, Cracking the Coding Interview, and this [repo](https://github.com/karan/Projects).
 
 ## AoC 2017
 Problems from [Advent of Code 2017](https://adventofcode.com/2017).
 
 ## Code Jams
 Problems from Google Code Jams.
-
-#### Coin jam
-A jamcoin is a string of `N >= 2` digits with the following properties:
-
-* Every digit is either a 0 or 1.
-* The first digit is 1 and the last digit is 1.
-* If you interpret the string in any base between 2 and 10, inclusive, the resulting number is not prime.
-
-There are communities that use jamcoins as a form of currency. When sending someone a jamcoin, it is polite to prove that the jamcoin is legitimate by including a nontrivial divisor of that jamcoin's interpretation in each base from 2 to 10. For convenience, these divisors must be expressed in base 10.
-
-Given `J` and `N`, produce `J` different jamcoins of length `N`, along with proof that they are legitimate.
-
-#### Counting sheep
-Bleatrix "Trotter" the sheep has devised a strategy that helps her fall asleep faster. First, she picks a number `N`. Then she starts naming `N`, `2N`, `3N`, and so on. She keeps track of which digits she has seen at least once so far as part of any number she has named. Once she has seen each of the ten digits at least once, she will fall asleep. Knowing `N`, print the last number Bleatrix will see before falling asleep. If the poor sheep will count forever, print INSOMNIA instead.
-
-#### File fix-it
-Given a list of paths of existing directories on a Unix system and a list of paths of new directories, output the minimal number of `mkdir` commands required to create the new directories. For example, given:
-```
-	Existing:
-		/chicken
-		/chicken/egg
-		/chicken/egg/spam
-	New:
-		/chicken
-		/chicken/egg/ham/spam
-		/chicken/spam
-```
-the answer should be 3, because the required commands are:
-```
-	mkdir chicken/egg/ham
-	mkdir chicken/egg/ham/spam
-	mkdir chicken/spam
-```
-
-#### Last word
-On the game show The Last Word, the host begins a round by showing the contestant a string `S` of uppercase English letters. The host will then present the contestant with the letters of `S`, one by one, in the order in which they appear in `S`. When the host presents the first letter, the contestant writes it on the whiteboard. Each time the host presents a letter, the contestant must write it at the beginning or the end of the word on the whiteboard before the host moves on to the next letter. The contestant wins the game if their word is the last of an alphabetically sorted list of all of the possible words that could have been produced.
-
-#### Minimum scalar product
-You are given two vectors: `X` and `Y`. Suppose you are allowed to permute the coordinates of each vector as you wish. Choose two permutations such that the scalar product of your two new vectors is the smallest possible, and output that minimum scalar product. 
-
-#### Revenge of the pancakes
-Given a string of `-` and `+` describing a stack of pancakes, print the minimal number of flips required so that all pancakes are happy side up (`+`).
-
-The flip is defined as follows: if we number the pancakes `1, 2, ..., N` from top to bottom, choose the top `i` pancakes to flip. Then, after the flip, the stack is `i, i-1, ..., 2, 1, i+1, i+2, ..., N`. Pancakes `1, 2, ..., i` now have the opposite side up, whereas pancakes `i+1, i+2, ..., N` have the same side up that they had up before.
 
 ## Codility
 Training exercises from [Codility](https://www.codility.com). Probably correct, at least according to the autograder (all score 100%).

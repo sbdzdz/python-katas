@@ -1,3 +1,9 @@
+"""
+You are given two vectors: `X` and `Y`. Suppose you are allowed to permute the coordinates of each vector as you wish.
+
+Choose two permutations such that the scalar product of your two new vectors is the smallest possible, and output that minimum scalar product. 
+"""
+
 def solution(X, Y):
     return sum([x*y for x, y in zip(sorted(X), sorted(Y, reverse=True))])
 

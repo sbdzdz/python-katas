@@ -1,3 +1,11 @@
+"""
+Given a string of - and + describing a stack of pancakes, print the minimal number of flips required so that all pancakes are happy side up (+).
+
+The flip is defined as follows: if we number the pancakes 1, 2, ..., N from top to bottom, choose the top i pancakes to flip. Then, after the flip, the stack is i, i-1, ..., 2, 1, i+1, i+2, ..., N.
+
+Pancakes 1, 2, ..., i now have the opposite side up, whereas pancakes i+1, i+2, ..., N have the same side up that they had up before.
+"""
+
 def counter(function):
     def wrapper(*args):
         wrapper.called += 1
