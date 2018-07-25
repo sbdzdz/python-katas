@@ -1,3 +1,8 @@
+"""
+Given an integer N, Find the longest sequence of consecutive zeros
+surrounded by ones at both ends in the binary representation of that integer.
+"""
+
 import re
 
 def solution(N):

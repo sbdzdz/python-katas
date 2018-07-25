@@ -1,6 +1,10 @@
-def solution(A, B, K):
-    if A%K != 0:
-        A = K*((A//K)+1)
-    if B%K != 0:
-        B = K*((B//K))
-    return (B//K)-(A//K)+1
+"""
+Compute the number of integers divisible by k in range [a, b].
+"""
+
+def solution(a, b, k):
+    if a%k != 0:
+        a = k*(a//k + 1)
+    if b%k != 0:
+        b = k*(b//k)
+    return b//k - a//k + 1

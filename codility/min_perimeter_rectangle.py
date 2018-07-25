@@ -1,3 +1,9 @@
+"""
+Find the minimal perimeter of a rectangle whose area equals N.
+
+Assume that the lengths of sides are integers.
+"""
+
 def solution(N):
     perimeters = []
     counter = 1

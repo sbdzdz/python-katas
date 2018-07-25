@@ -1,3 +1,13 @@
+"""
+You are given N counters and a non empty array A of M integers
+representing a sequence of operations:
+
+- if A[K]=X such that 1 <= X <= N, increment counter X
+- if A[K]=N+1, set all counters to the value of the maximal counter
+
+Calculate the value of every counter after all operations.
+"""
+
 def solution(N, A):
     counters = [0]*N
     last_max_counter = 0
