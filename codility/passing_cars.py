@@ -1,3 +1,11 @@
+"""
+A non-empty array A represents consecutive cars on a road:
+- 0 represents a car travelling east
+- 1 represents a car travelling west
+
+Return the number of pairs of passing cars. Return -1 if it's really big.
+"""
+
 def solution(A):
     total = 0
     prefsum = calculate_prefsum(A)

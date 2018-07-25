@@ -1,3 +1,7 @@
+"""
+Calculate the first n digits of π using a spigot algorithm. 
+"""
+
 from math import floor
 
 def print_pi(decimal_places):

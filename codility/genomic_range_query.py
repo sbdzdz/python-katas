@@ -1,3 +1,13 @@
+"""
+A DNA sequence is represented as a string consisting of the letters A, C, G, T.
+
+Nucleotides A, C, G, and T have impact factors of 1, 2, 3, and 4, respectively.
+
+Given a string S representing the DNA sequence and two arrays P and Q,
+each consisting of M integers, return an array of M integers representing
+the minimal factor between position P[K] and Q[K].  
+"""
+
 def solution(S, P, Q):
     results = []
     prefsum = calculate_prefsum(S)
