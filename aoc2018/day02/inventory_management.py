@@ -11,17 +11,14 @@ def calculate_checksum(ids):
             three += 1
     return two * three
 
-def count_different(s1, s2):
-    return sum(int(c1 != c2) for c1, c2 in zip(s1, s2))
-
-def get_common(s1, s2):
-    return ''.join(c1 for c1, c2 in zip(s1, s2) if c1 == c2)
-
 def find_correct(ids):
+    seen  = set()
     for i in ids:
-        for j in ids:
-            if count_different(i, j) == 1:
-                return get_common(i, j)
+        for j in range(len(i)):
+            substring = i[:j] + '_' + i[j+1:]
+            if substring in seen:
+                return substring.replace('_', '')
+            seen.add(substring)
 
 with open('input', 'r') as f:
     ids = f.read().splitlines()
