@@ -24,9 +24,7 @@ def find_intact_claim(fabric, claims):
 
 with open('input') as f:
     p = re.compile(r'\#(\d+)\ @\ (\d+),(\d+)\:\ (\d+)x(\d+)')
-    claims = []
-    for line in f:
-        claims.append(p.match(line).groups())
+    claims = [p.match(line).groups() for line in f]
 
 fabric = make_claims(claims)
 print(count_overlaps(fabric))
