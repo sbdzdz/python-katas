@@ -19,10 +19,7 @@ def find_intact_claim(fabric, claims):
         point_values = []
         claim_id, x, y, w, h = claim
         x, y, w, h = int(x), int(y), int(w), int(h)
-        for i in range(x, x+w):
-            for j in range(y, y+h):
-                point_values.append(fabric[i, j] == 1)
-        if all(point_values):
+        if all(fabric[i, j] == 1 for i in range(x, x+w) for j in range(y, y+h)):
             return claim_id
 
 with open('input') as f:
