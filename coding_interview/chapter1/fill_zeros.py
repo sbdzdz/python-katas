@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def fill_zeros(arr):
     if not arr:
         return arr
@@ -14,11 +15,12 @@ def fill_zeros(arr):
                 zero_rows.add(i)
                 zero_cols.add(j)
     for row in zero_rows:
-        arr[row] = [0]*n
+        arr[row] = [0] * n
     for col in zero_cols:
         for row in arr:
             row[col] = 0
     return arr
+
 
 def fill_zeros_pythonic(arr):
     arr = np.array(arr)

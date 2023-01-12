@@ -6,5 +6,6 @@ def unique_characters(s):
         seen.add(c)
     return True
 
+
 def unique_characters_pythonic(s):
     return len(set(s)) == len(s)
