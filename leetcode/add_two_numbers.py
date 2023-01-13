@@ -19,23 +19,18 @@ def add_two_numbers(l1, l2):
     carryover = 0
     first = ListNode()
     current = first
-    while True:
-        if l1 is None and l2 is None:
-            if carryover > 0:
-                current.next = ListNode(carryover)
-            break
+    while l1 is not None or l2 is not None or carryover:
         l1_val = l1.val if l1 is not None else 0
         l2_val = l2.val if l2 is not None else 0
-        l1 = l1.next if l1 is not None else None
-        l2 = l2.next if l2 is not None else None
+
         result = l1_val + l2_val + carryover
-        if result > 9:
-            carryover = 1
-            result = result % 10
-        else:
-            carryover = 0
+        carryover = result // 10
+        result = result % 10
         current.next = ListNode(result)
         current = current.next
+
+        l1 = l1.next if l1 is not None else None
+        l2 = l2.next if l2 is not None else None
     return first.next
 
 
